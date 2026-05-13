@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(common.css);
+
+html,body {
+  min-width: calc(1280 / 1280 * 100vw);
+  width: 100vw;
+}
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: calc(1200 / 1280 * 100vw);
+}
+
+header {
+  height: calc(40 / 1280 * 100vw);
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header span.update {
+  padding: 0 calc(10 / 1280 * 100vw);
+  font-size: calc(14 / 1280 * 100vw);
+  color: #93a9fc;
+}
+/* header .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(../images/logo.png) center center no-repeat #fff;
+  background-size: cover;
+} */
+
+main section:not(.top) {
+  padding:calc(100 / 1280 * 100vw) 0;
+  min-height: calc(1200 / 1280 * 100vw);
+}
+main section h3.title {
+  margin-bottom: calc(60 / 1280 * 100vw);
+  font-size: calc(36 / 1280 * 100vw);
+  font-weight: 900;
+}
+main section.top {
+  height: calc(1200 / 1280 * 100vw);
+  background: url(../images/introBg.png) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+main section.top .wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+}
+main section.top .logo {
+  margin: calc(40 / 1280 * 100vw);
+  width: calc(60 / 1280 * 100vw);
+  height: calc(60 / 1280 * 100vw);
+  /* background-color: #597c94;
+  border: 1px solid #2c597b;
+  border-radius: 50%;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 0;
+  z-index: 1;
+}
+main section.top .logo::before {
+  position: absolute;
+  top: calc(-1 / 1280 * 100vw);
+  left: calc(-1 / 1280 * 100vw);
+  right: calc(-1 / 1280 * 100vw);
+  bottom: calc(-1 / 1280 * 100vw);
+  background: url(../images/logo.png) center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  content: "";
+  z-index: -1;
+}
+main section.top .textBox {
+  padding-bottom: calc(100 / 1280 * 100vw);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main section.top .textBox h2 {
+  margin-bottom: calc(20 / 1280 * 100vw);
+  font-size: calc(80 / 1280 * 100vw);
+  font-weight: 700;
+}
+main section.top .textBox p {
+  margin-top: calc(30 / 1280 * 100vw);
+  font-size: calc(36 / 1280 * 100vw);
+}
+main section.top .slide {
+  padding: calc(30 / 1280 * 100vw) 0;
+  width: 100%;
+  /* height: 200px; */
+}
+main section.top .slide ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: calc(30 / 1280 * 100vw) calc(50 / 1280 * 100vw);
+  height: 100%;
+}
+main section.top .slide ul li {
+  width: auto !important;
+}
+main section.top .slide ul li img {
+  height: calc(60 / 1280 * 100vw);
+}
+main section.top .slide ul li img.ico_jquery,
+main section.top .slide ul li img.ico_slack {
+  height: calc(46 / 1280 * 100vw);
+}
+main section.work {}
+main section.work dl {
+  margin-left: calc(100 / 1280 * 100vw);
+  display: flex;
+  gap: calc(30 / 1280 * 100vw);
+}
+main section.work dl + dl {
+  margin-top: calc(50 / 1280 * 100vw);
+}
+main section.work dt {
+  font-size: calc(18 / 1280 * 100vw);
+}
+main section.work dd .company {
+  font-size: calc(20 / 1280 * 100vw);
+  font-weight: 600;
+}
+main section.work dd .list {
+  margin-top: calc(20 / 1280 * 100vw);
+}
+main section.work dd .list li {
+  position: relative;
+  padding-left: calc(10 / 1280 * 100vw);
+  font-size: calc(16 / 1280 * 100vw);
+  color: #706f6f;
+  line-height: calc(30 / 1280 * 100vw);
+}
+main section.work dd .list li::before {
+  content: "";
+  position: absolute;
+  top: calc(15 / 1280 * 100vw);
+  left: 0;
+  width: calc(5 / 1280 * 100vw);
+  height: calc(1 / 1280 * 100vw);
+  background-color: #706f6f;
+}
+main section.project {
+  background-color: #f4f4f4;
+}
+main section.project .moveTop {
+  position: fixed;
+  bottom: calc(60 / 1280 * 100vw);
+  right: calc(30 / 1280 * 100vw);
+  width: calc(40 / 1280 * 100vw);
+  height: calc(30 / 1280 * 100vw);
+  line-height: calc(28 / 1280 * 100vw);
+  text-align: center;
+  /* 
+  border-radius: 50%;
+  border: 1px solid #aeaeae;
+  background-color: #f4f4f4;
+  */
+  border: calc(1 / 1280 * 100vw) solid #000;
+  background-color: #333;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+main section.project .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: calc(20 / 1280 * 100vw);
+  display: none;
+}
+main section.project .list li {
+  padding: calc(20 / 1280 * 100vw);
+  background-color: #fff;
+  border: calc(1 / 1280 * 100vw) solid #aeaeae;
+  border-radius: 12px;
+}
+main section.project .list .info {
+  padding-bottom: calc(10 / 1280 * 100vw);
+  border-bottom: calc(1 / 1280 * 100vw) solid #d3d3d3;
+}
+main section.project .list .info .tit {
+  font-size: calc(16 / 1280 * 100vw);
+  font-weight: 600;
+  line-height: calc(22 / 1280 * 100vw);
+  width: calc(344 / 1280 * 100vw);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+main section.project .list .info .date {
+  padding: calc(10 / 1280 * 100vw) 0;
+  font-size: calc(12 / 1280 * 100vw);
+  color: #737272;
+  display: block;
+}
+main section.project .list .thumb {
+  position: relative;
+  margin-top: calc(8 / 1280 * 100vw);
+  height: calc(240 / 1280 * 100vw);
+  background-color: #f9f9f9;
+  display: block;
+  /* align-items: center;
+  justify-content: center; */
+  overflow: hidden;
+}
+main section.project .list .thumb::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content:"";
+}
+main section.project .list .thumb > img {
+  width: fit-content;
+  display: block;
+}
+main section.project .list .thumb.pc::before {
+  background: url(../images/projectBg1.png) center center no-repeat;
+  background-size: auto 100%;
+}
+main section.project .list .thumb.mo::before {
+  background: url(../images/projectBg2.png) center center no-repeat;
+  background-size: auto 100%;
+}
+main section.project .list .thumb.pc > img {
+  margin: calc(41 / 1280 * 100vw) auto 0;
+  width: calc(265 / 1280 * 100vw);
+}
+main section.project .list .thumb.mo > img {
+  margin: calc(20 / 1280 * 100vw) auto 0;
+  width: calc(100 / 1280 * 100vw);
+}
+main section.project .list .tech {
+  margin-top: calc(10 / 1280 * 100vw);
+}
+main section.project .list .tech span {
+  padding: 0 calc(5 / 1280 * 100vw);
+  height: calc(24 / 1280 * 100vw);
+  border-radius: calc(4 / 1280 * 100vw);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12 / 1280 * 100vw);
+  color: #fff;
+  background: #555;
+}
+main section.project .list .tech span.responsive {
+  background-color: #007AFF;
+}
+main section.project .list .tech span.html {
+  background-color: #e44d26;
+}
+main section.project .list .tech span.css {
+  background-color: #264de4;
+}
+main section.project .list .tech span.sass {
+  background-color: #bf4080;
+}
+main section.project .list .tech span.jquery {
+  background-color: #0769ad;
+}
+main section.project .list .tech span.javascript {
+  background-color: #f7e018;
+  color: #282828;
+}
+main section.project .list .tech span.vue {
+  content:"Vue";
+  background-color: #42b883;
+  /* background-color: #33a06f; */
+}
+main section.project .list .tech span.react {
+  content:"React";
+  background-color: #087ea4;
+}
+main section.project .list .tech span.typescript {
+  content:"TypeScript";
+  background-color: #3178c6;
+}
+main section.project .list .tech span.node {
+  content:"Node";
+  background-color: #417e38;
+}
+main section.project .list .tech span.webpack {
+  content:"Webpack";
+  background-color: #2b3a42;
+}
+main section.project .list .tech span.java {
+  content:"Java";
+  background-color: #e11f21;
+}
+main section.project .list .tech span.spring {
+  content:"Spring";
+  background-color: #74b33b;
+}
+main section.project .list .tech span.mysql {
+  content:"MySQL";
+  background-color: #00758f;
+}
+main section.project .list .tech span.mariadb {
+  content:"MariaDB";
+  background-color: #003545;
+}
+main section.project .list .tech span.photoshop {
+  /* background-color: #31a8ff; */
+  background-color: #001e36;
+  color: #31a8ff;
+}
+main section.project .list .tech span.illustrator {
+  /* background-color: #ff9a00; */
+  background-color: #330000;
+  color: #ff9a00;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(50 / 1280 * 100vw);
+  border-top: calc(1 / 1280 * 100vw) solid #e0e0e0;
+}
