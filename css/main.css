@@ -13,18 +13,7 @@ html,body {
   width: calc(1200 / 1280 * 100vw);
 }
 
-header {
-  height: calc(40 / 1280 * 100vw);
-  background-color: #282828;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header span.update {
-  padding: 0 calc(10 / 1280 * 100vw);
-  font-size: calc(14 / 1280 * 100vw);
-  color: #93a9fc;
-}
+
 
 /* 
 
