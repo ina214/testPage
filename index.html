@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Portfolio</title>
+  <script>
+    const topBtn = document.querySelector('.moveTop');
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const topBtn = document.querySelector('.moveTop');
+
+      topBtn.style.display = "none";
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollOffset = document.querySelector("main").offsetTop;
+        console.log(scrollTop, scrollOffset);
+
+        if (scrollTop < scrollOffset) {
+          topBtn.style.display = "none";
+        } else {
+          topBtn.style.display = "block";
+        }
+      });
+      
+      topBtn.addEventListener("click", () => {
+        const scrollToTop = () => {
+        const currentPosition = window.scrollY;
+        if (currentPosition > 0) {
+            window.scrollTo(0, currentPosition - 50);
+              requestAnimationFrame(scrollToTop);
+            }
+          }
+
+        scrollToTop();
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="logo"></h1>
+    <span class="update">update_2026.01.02</span>
+  </header>
+  <main>
+    <section class="top" style="display: none;">
+      <!-- <h1 class="logo">Seok</h1> -->
+      <div class="wrap">
+        <div class="textBox">
+          <h2>SEOK HYE SU</h2>
+          <p>i.soek.hs@gmail.com</p>
+          <p>010.9110.8650</p>
+        </div>
+      </div>
+      <div class="slide">
+        <ul>
+          <!-- Slides -->
+          <li><img class="ico_html5" src="images/html5.svg" alt="html5"></li>
+          <li><img class="ico_css3" src="images/css3.svg" alt="css3"></li>
+          <li><img class="ico_sass" src="images/sass.svg" alt="sass"></li>
+          <li><img class="ico_javascript" src="images/javascript.svg" alt="javascript"></li>
+          <li><img class="ico_jquery" src="images/jquery.svg" alt="jquery"></li>
+          <li><img class="ico_vue" src="images/vue.svg" alt="vue"></li>
+          <li><img class="ico_react" src="images/react.svg" alt="react"></li>
+          <li><img class="ico_photoshop" src="images/photoshop.svg" alt="photoshop"></li>
+          <li><img class="ico_figma" src="images/figma.svg" alt="figma"></li>
+          <li><img class="ico_zeplin" src="images/zeplin.svg" alt="zeplin"></li>
+          <li><img class="ico_slack" src="images/slack.svg" alt="slack"></li>
+          <li><img class="ico_notion" src="images/notion.svg" alt="notion"></li>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" style="display: none;">
+      <div class="wrap">
+        <h3 class="title">WORK EXPERIENCE</h3>
+        <dl>
+          <dt>2024.04 - 2024.11</dt>
+          <dd>
+            <strong class="company">주식회사 씨티티디</strong>
+            <ul class="list">
+              <li>갤럭시 스토어 앱 이벤트 정기 운영</li>
+              <li>삼성닷컴 이벤트 비정기 운영</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2020.04 - 2021.07</dt>
+          <dd>
+            <strong class="company">㈜ 휴먼컨설팅그룹</strong>
+            <ul class="list">
+              <li>hunel HR System 패키지 개발</li>
+              <li>SK주식회사 C&C 포탈 개선</li>
+              <li>SK주식회사 C&C HR System 구축</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2015.11 - 2016.01</dt>
+          <dd>
+            <strong class="company">㈜ 디나인컴즈</strong>
+            <ul class="list">
+              <li>리엔케이 운영 및 리스타터 프로모션 이벤트</li>
+              <li>세이브더칠드런 운영 및 프로모션 이벤트</li>
+              <li>플러스와인 모바일 웹 구축</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2013.03 - 2014.05</dt>
+          <dd>
+            <strong class="company">㈜ 제오젠</strong>
+            <ul class="list">
+              <li>롯데 롭스 운영</li>
+              <li>해비치호텔 모바일 웹 구축</li>
+              <li>기아 큐멤버스 웹 기능 개선</li>
+              <li>제오젠 웹/모바일 웹 개편</li>
+              <li>현대다이모스 웹 구축</li>
+              <li>롯데면세점 운영 및 프로모션 이벤트</li>
+              <li>넥슨 운영 및 웹접근성 개선</li>
+              <li>기아 펀기아 운영 및 웹/모바일 웹 개선(웹접근성 마크 획득)</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2012.12 - 2013.03</dt>
+          <dd>
+            <strong class="company">주식회사 레드닷</strong>
+            <ul class="list">
+              <li>삼성중공업 웹 구축</li>
+              <li>신한대학교 웹 구축</li>
+              <li>룩앤에스 웹 구축</li>
+              <li>아시아나 금호타이어 자동화기기 보안 콘솔 운영</li>
+              <li>공평저축은행 웹 구축</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2011.08 - 2012.10</dt>
+          <dd>
+            <strong class="company">㈜ 에즈넷</strong>
+            <ul class="list">
+              <li>NTIS R&D 웹 기능 개선</li>
+              <li>경북 교육넷 카페 템플릿 제작</li>
+              <li>OKFTA 무역종합지원센터 웹 구축</li>
+              <li>NTIS 개방형기획 웹 구축</li>
+              <li>Smart KITA 앱 내 카테고리 추가 개선</li>
+              <li>가위바위보 게임 제작(내부 프로젝트)</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl>
+          <dt>2010.12 - 2011.06</dt>
+          <dd>
+            <strong class="company">주식회사 에이치앤엠</strong>
+            <ul class="list">
+              <li>0044무료국제전화 앱 디자인</li>
+              <li>무료국제전화 OpenPhone 앱 디자인</li>
+              <li>SK커머스 틸리언 모바일 앱 추가 디자인</li>
+              <li>SK커머스 테이스팅노트 앱 디자인</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </section>
+    <section class="project" style="display: none;">
+      <div class="wrap">
+        <h3 class="title">PROJECT</h3>
+        <span class="moveTop">Top</span>
+        <ul class="list">
+          <li>
+            <div class="info">
+              <p class="tit">GalaxyStore 이벤트 운영</p>
+              <span class="date">2024.04 - 2024.11 (씨티티디)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_galaxy.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">코리아세븐 차세대 점포시스템 구축</p>
+              <span class="date">2023.09 - 2023.12 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_seven.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="vue">VUE</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">한화투자증권 제휴채널 운영 및 신규 구축</p>
+              <span class="date">2023.05 - 2023.09 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hanwha.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">롯데카드 모빌리티, 로카페이 구축</p>
+              <span class="date">2022.04 - 2023.01 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_loca.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit" title="대우건설 HR System 패키지 개발 및 채용사이트 제작">대우건설 HR System 패키지 개발 및 채용사이트 제작</p>
+              <span class="date">2021.11 - 2022.03 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_daewoo.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="vue">VUE</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">풀무원 소싱포탈 멀티브라우저 적용 프로젝트</p>
+              <span class="date">2021.08 - 2021.11 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_pullmuone.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">hunel HR System 패키지 개발 제작</p>
+              <span class="date">2021.06 - 2021.07 (휴먼컨설팅그룹)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hcg3.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="vue">VUE</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">SK주식회사 C&C 포탈 개발 지원</p>
+              <span class="date">2021.04 - 2021.06 (휴먼컨설팅그룹)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hcg2.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="vue">VUE</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">SK주식회사 C&C HR System 재구축</p>
+              <span class="date">2020.04 - 2020.08 (휴먼컨설팅그룹)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hcg1.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="vue">VUE</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">현대건설 Talent-Map 구축</p>
+              <span class="date">2019.11~2020.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hyundai.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="sass">SCSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">캐논코리아 컨슈머 이미징 운영</p>
+              <span class="date">2019.04 - 2019.10 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_canon.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">넷서스텍 구축 및 블랙샷M 프로모션 제작 외</p>
+              <span class="date">2019.01 - 2019.03 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_blackshotm.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">2018년 삼성SDS(삼성닷컴) 통합운영</p>
+              <span class="date">2018.10 - 2019.01 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_sds.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">KB카드SAC/ESMS 개발 구축</p>
+              <span class="date">2018.03 - 2018.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_kb.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">로레알 법무 구축</p>
+              <span class="date">2018.03 - 2018.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_loreal.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">웅진 계열사(웅진그룹, 웅진플레이도시 외) 운영</p>
+              <span class="date">2018.03 - 2018.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_woongjin.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">게임앤게임 리뉴얼 구축 개편</p>
+              <span class="date">2017.06 - 2017.09 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gng2017.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">모자이크펀딩 구축</p>
+              <span class="date">2017.06 - 2017.07 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_mosaic.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">롯데 소비재 렌탈 플랫폼 구축</p>
+              <span class="date">2017.01 - 2017.05 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_myomee.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">타이완관광청 구축</p>
+              <span class="date">2017.04 - 2017.05 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_taiwan.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">아트버스터 반응형 웹 구축</p>
+              <span class="date">2017.03~2017.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_artbuster.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">라이징포스 브랜드페이지 제작</p>
+              <span class="date">2017.02~2017.02 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_risingforce.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">다이브 사전예약 프로모션 제작</p>
+              <span class="date">2017.02~2017.02 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_dive.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">타이젠 반응형 웹 제작</p>
+              <span class="date">2016.12~2017.02 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_tizen.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">GM85 반응형 웹 제작</p>
+              <span class="date">2016.10~2016.10 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gm85.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">SOSCON 2016 프로모션 제작</p>
+              <span class="date">2016.08 - 2016.10 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_soscon2016.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">푹(POOQ) 모바일 웹 고도화</p>
+              <span class="date">2016.09~2016.12 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_pooq.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">게임앤게임 반응형 웹 리뉴얼</p>
+              <span class="date">2016.07~2016.09 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gng2016.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">K뱅크 계정계 PC 웹 구축</p>
+              <span class="date">2016.05 - 2016.07 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_kbank.jpg" alt="" style="margin-top: -10px;">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span>웹스퀘어</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">창업문 구축</p>
+              <span class="date">2016.04~2016.05 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_changupmoon.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">닥터포헤어 PC 웹 리뉴얼</p>
+              <span class="date">2016.03 - 2016.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_drForHair.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">이마트 에브리데이 정회원몰 구축</p>
+              <span class="date">2016.03 - 2016.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_emart02.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">이마트 에브리데이 B2C 모바일 웹 구축</p>
+              <span class="date">2016.03 - 2016.04 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_emart01.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">헬시그루 모바일 웹 구축</p>
+              <span class="date">2016.01 - 2016.02 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_healthygru.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">리엔케이 운영 및 리스타터 프로모션 제작</p>
+              <span class="date">2015.12~2015.12 (디나인컴즈)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_renk.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">세이브더칠드런 운영 및 응답하라 프로모션 제작</p>
+              <span class="date">2015.11~2015.12 (디나인컴즈)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_savechildren.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <!-- <li>
+            <div class="info">
+              <p class="tit">플러스와인 모바일 웹 구축</p>
+              <span class="date">2015.11~2015.11 (디나인컴즈)</span>
+            </div>
+            <div class="thumb mo">
+              <img src="images/project_kbank.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li> -->
+          <li>
+            <div class="info">
+              <p class="tit">원센텐스 반응형 웹 제작</p>
+              <span class="date">2015.09~2013.10 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_onesentence.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">웹접근성 마크 획득_GS계열사(GS리테일/GS25/GS슈퍼마켓/왓슨스/팝카드)</p>
+              <span class="date">2015.08~2015.08 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gs.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">해피포인트 모바일 앱 해피오더 운영</p>
+              <span class="date">2015.05~2015.07 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_spc01.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">병원 사이트 템플릿 제작_빌더작업</p>
+              <span class="date">2015.04~2015.05 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_mcircle.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <!-- <li>
+            <div class="info">
+              <p class="tit">이룸 이비인후과 PC 웹 제작</p>
+              <span class="date">2015.04~2015.04 (프리랜서)</span>
+            </div>
+            <div class="thumb pc">
+              <img src="images/project_kbank.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">아이윤 메디컬센터 PC 웹 제작</p>
+              <span class="date">2015.04~2015.04 (프리랜서)</span>
+            </div>
+            <div class="thumb pc">
+              <img src="images/project_kbank.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li> -->
+          <li>
+            <div class="info">
+              <p class="tit">해피포인트 모바일 앱 해피오더 구축</p>
+              <span class="date">2015.02~2015.03 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_spc02.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">디자인하우스 반응형 웹 리뉴얼</p>
+              <span class="date">2015.01~2015.02 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_designhouse.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">청담3.0 i-Learning 부분 콘텐츠 제작지원</p>
+              <span class="date">2014.09~2014.12 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_chungdam.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">노스타임 PC 웹 구축</p>
+              <span class="date">2013.11~2013.11 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_nostime.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">롯데 롭스 운영</p>
+              <span class="date">2013.09~2014.05 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_lohbs.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">해비치호텔 모바일 웹 구축</p>
+              <span class="date">2014.03~2014.04 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_haevichi.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">기아 큐멤버스 PC웹 기능 개선</p>
+              <span class="date">2014.01~2014.02 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_kiaQmembers.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">제오젠 PC/모바일 웹 개편</p>
+              <span class="date">2013.11~2013.12 (제오젠)</span>
+            </div>
+            <div class="thumb pc">
+              <!-- <img src="images/project_kbank.jpg" alt=""> -->
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">현대다이모스 PC웹 구축</p>
+              <span class="date">2013.09~2013.11 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hyundaiDymos.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">롯데면세점 운영 및 프로모션</p>
+              <span class="date">2013.06~2013.09 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_lotte.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">넥슨 운영 및 웹접근성 개선</p>
+              <span class="date">2013.04~2013.12 (제오젠)</span>
+            </div>
+            <div class="thumb pc">
+              <!-- <img src="images/project_kbank.jpg" alt=""> -->
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">웹접근성 마크 획득_기아 펀기아 운영 및 PC/모바일 웹</p>
+              <span class="date">2013.03~2013.04 (제오젠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_funkia.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <!-- <li>
+            <div class="info">
+              <p class="tit">삼성중공업 PC 웹 구축 지원</p>
+              <span class="date">2013.02~2013.03 (레드닷)</span>
+            </div>
+            <div class="thumb pc">
+              <img src="images/project_kbank.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li> -->
+          <li>
+            <div class="info">
+              <p class="tit">신흥대학교 PC 웹 구축 지원</p>
+              <span class="date">2013.02~2013.03 (레드닷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_shinheung.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">룩엔에스 PC 웹 구축</p>
+              <span class="date">2013.01~2013.01 (레드닷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_lookns.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">아시아나 금호타이어 자동화 기기 보안 콘솔 운영</p>
+              <span class="date">2012.11~2012.11 (레드닷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_kumhotire.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">공평저축은행 PC 웹 구축 지원</p>
+              <span class="date">2012.11~2012.11 (레드닷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gongpyeong.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">NTIS R&D PC 웹 기능 개선</p>
+              <span class="date">2012.09~2012.10 (에즈넷)</span>
+            </div>
+            <div class="thumb pc">
+              <!-- <img src="images/project_kbank.jpg" alt=""> -->
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">경북 교육넷 카페 템플릿 추가</p>
+              <span class="date">2012.06~2012.09 (에즈넷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_gyo6.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">OKFTA 무역종합지원센터 PC 웹 구축</p>
+              <span class="date">2012.03~2012.05 (에즈넷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_fta.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="photoshop">PSD</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">NTIS 개방형기획 PC웹 구축</p>
+              <span class="date">2012.02~2012.03 (에즈넷)</span>
+            </div>
+            <div class="thumb pc">
+              <!-- <img src="images/project_kbank.jpg" alt=""> -->
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="photoshop">PSD</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">Smart KITA 앱 카테고리 추가</p>
+              <span class="date">2011.12~2012.02 (에즈넷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_smartKITA.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="javascript">JavaScript</span>
+              <span class="jquery">jQuery</span>
+              <span class="photoshop">PSD</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">내부 프로젝트 가위바위보 게임 제작</p>
+              <span class="date">2011.08~2011.11 (에즈넷)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_game.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="jquery">jQuery</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">0044무료국제전화 / 무료국제전화 OpenPhone 앱 디자인 추가</p>
+              <span class="date">2012.03~2012.07 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_freePhone2.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="photoshop">PSD</span>
+              <span class="illustrator">Illust</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">0044무료국제전화 / 무료국제전화 OpenPhone 앱 디자인</p>
+              <span class="date">2011.09~2011.10 (프리랜서)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_freePhone1.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="photoshop">PSD</span>
+              <span class="illustrator">Illust</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">에이치앤엠 홈페이지 관리 및 쿠피 사이트 운영</p>
+              <span class="date">2010.12~2011.06 (에이치앤엠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_hnm.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="photoshop">PSD</span>
+              <span class="illustrator">Illust</span>
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+            </div>
+          </li>
+          <li>
+            <div class="info">
+              <p class="tit">와인 테이스팅 노트 디자인</p>
+              <span class="date">2010.12~2011.03 (에이치앤엠)</span>
+            </div>
+            <div class="thumb">
+              <img src="images/project_wine.jpg" alt="">
+            </div>
+            <div class="tech">
+              <span class="photoshop">PSD</span>
+              <span class="illustrator">Illust</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>© ina214. All rights reserved.</footer>
+</body>
+</html>

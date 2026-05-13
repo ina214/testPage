@@ -1,0 +1,27 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+html, body{ min-height:100%; }
+html{overflow-x:hidden; overflow-y:scroll;}
+body{/*font-family:'Noto Sans KR', sans-serif; font-size:16px; font-weight:400;*/
+line-height:1.2; letter-spacing:0; word-wrap:break-word; word-break:keep-all;}
+
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none;}
+table {border-collapse: collapse; border-spacing:0;}
+ul, ol{list-style:none;}
+img{border:none; outline:none; vertical-align:top; -ms-user-select:none; user-select:none;}
+a{text-decoration:none; outline:none;}
+form{display:block;}
+button, input, label, span, select{display:inline-block; vertical-align:baseline;}
+button{border:none; background:none; cursor:pointer;}
+textarea{outline:none; resize:none;}
+select::-ms-expand{display:none;}
+
+/* 모바일 */
+@media screen and (max-width: 576px) { html {-webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%;} }
+
+/* input placeholder 설정 */
+/* input::-webkit-input-placeholder {color: #aaaaaa;}
+input:-ms-input-placeholder {color: #aaaaaa;}
+textarea::-webkit-input-placeholder {color: #aaaaaa;}
+textarea:-ms-input-placeholder{color: #aaaaaa;} */

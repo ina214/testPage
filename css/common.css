@@ -1,0 +1,22 @@
+/* reset */
+/* 외부파일 */
+
+/* common */
+:root {
+  --base-font-size: 16;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* font */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: "Nanum Pen Script", cursive; */
+  font-weight: 400;
+  color: #282828;
+}
