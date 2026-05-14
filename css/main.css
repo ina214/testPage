@@ -303,10 +303,3 @@ main section.project .list .tech span.illustrator {
 }
 */
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: calc(50 / 1280 * 100vw);
-  border-top: calc(1 / 1280 * 100vw) solid #e0e0e0;
-}
