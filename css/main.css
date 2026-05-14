@@ -89,11 +89,11 @@ main section.top .textBox p {
   margin-top: clamp(1rem, 2vw, 2rem);
   font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
-main section.top .slide {
-  padding: clamp(1.5rem, 2vw, 3rem) 0;
+main section.top .techList {
+  padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 2vw, 3rem);
   width: 100%;
 }
-main section.top .slide ul {
+main section.top .techList ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,11 +101,15 @@ main section.top .slide ul {
   gap: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 2vw, 3rem);
   height: 100%;
 }
-main section.top .slide ul li {
+main section.top .techList ul li {
   width: auto !important;
 }
-main section.top .slide ul li img {
+main section.top .techList ul li img {
   height: clamp(2rem, 3vw, 6rem);
+}
+main section.top .techList ul li img.ico_jquery,
+main section.top .techList ul li img.ico_slack {
+  height: clamp(1rem, 3vw, 3rem);
 }
 /* 
 
@@ -115,10 +119,7 @@ main section.top .slide ul li img {
 
 
 
-main section.top .slide ul li img.ico_jquery,
-main section.top .slide ul li img.ico_slack {
-  height: calc(46 / 1280 * 100vw);
-}
+
 main section.work {}
 main section.work dl {
   margin-left: calc(100 / 1280 * 100vw);
