@@ -27,7 +27,7 @@ main section:not(.top) {
   min-height: clamp(25rem, 2vw, 75rem);
 }
 main section h3.title {
-  margin-bottom: clamp(2rem, 2vw, 4rem);
+  margin-bottom: clamp(2rem, 4vw, 4rem);
   font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 900;
 }
@@ -73,7 +73,7 @@ main section.top .logo::before {
   z-index: -1;
 }
 main section.top .textBox {
-  padding-bottom: clamp(3rem, 2vw, 6rem);
+  padding-bottom: clamp(0, 2vw, 6rem);
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -111,24 +111,19 @@ main section.top .techList ul li img.ico_jquery,
 main section.top .techList ul li img.ico_slack {
   height: clamp(1.5rem, 3vw, 3rem);
 }
-/* 
 
-
-
-
-
-
-
-
-main section.work {}
 main section.work dl {
-  margin-left: calc(100 / 1280 * 100vw);
+  margin-left: clamp(3rem, 2vw, 6rem);
   display: flex;
-  gap: calc(30 / 1280 * 100vw);
+  gap: clamp(1rem, 2vw, 2rem)
 }
 main section.work dl + dl {
-  margin-top: calc(50 / 1280 * 100vw);
+  margin-top: clamp(1.5rem, 3vw, 3rem);
 }
+/* 
+
+main section.work {}
+
 main section.work dt {
   font-size: calc(18 / 1280 * 100vw);
 }
