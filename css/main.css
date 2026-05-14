@@ -74,6 +74,7 @@ main section.top .logo::before {
 }
 main section.top .textBox {
   padding-bottom: clamp(0, 2vw, 6rem);
+  padding-left: clamp(1.5rem, 2vw, 0);
   flex: 1;
   display: flex;
   flex-direction: column;
