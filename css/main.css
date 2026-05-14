@@ -73,7 +73,7 @@ main section.top .logo::before {
   z-index: -1;
 }
 main section.top .textBox {
-  padding-bottom: clamp(0, 2vw, 6rem);
+  padding-bottom: clamp(0rem, 2vw, 6rem);
   padding-left: clamp(1.5rem, 2vw, 0);
   flex: 1;
   display: flex;
