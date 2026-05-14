@@ -82,12 +82,12 @@ main section.top .textBox {
 }
 main section.top .textBox h2 {
   margin-bottom: clamp(1.25rem, 2vw, 2.5rem);
-  font-size: clamp(3rem, 2vw, 5rem);
+  font-size: clamp(2.5rem, 2vw, 5rem);
   font-weight: 700;
 }
 main section.top .textBox p {
   margin-top: clamp(1rem, 2vw, 2rem);
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(0.75rem, 2vw, 1.5rem);
 }
 main section.top .techList {
   padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 2vw, 3rem);
