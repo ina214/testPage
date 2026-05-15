@@ -166,10 +166,12 @@ main section.work dd .list li::before {
   height: 1px;
   background-color: #706f6f;
 }
-/* 
+
 main section.project {
   background-color: #f4f4f4;
 }
+/* 
+
 main section.project .moveTop {
   position: fixed;
   bottom: calc(60 / 1280 * 100vw);
