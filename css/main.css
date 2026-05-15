@@ -72,7 +72,7 @@ main section.top .logo::before {
 */
 
 main section:not(.top) {
-  padding: clamp(3rem, 4.5vw, 6rem);
+  padding: clamp(3rem, 4.5vw, 6rem) clamp(2rem, 4vw, 6rem);
   min-height: clamp(25rem, 50vw, 75rem);
 }
 main section h3.title {
@@ -239,7 +239,7 @@ main section.project .list .info .date {
 main section.project .list .thumb {
   position: relative;
   margin-top: 0.5rem;
-  height: clamp(5, 10vw, 15rem);
+  height: clamp(12.25rem, 10vw, 15rem);
   background-color: #f9f9f9;
   display: block;
   overflow: hidden;
@@ -253,8 +253,13 @@ main section.project .list .thumb::before {
   content:"";
 }
 main section.project .list .thumb > img {
-  width: fit-content;
+  width: 100%;
   display: block;
+}
+@media (min-width: 1024px) {
+  main section.project .list .thumb > img {
+    width: fit-content;
+  }
 }
 main section.project .list .thumb.pc::before {
   background: url(../images/projectBg1.png) center center no-repeat;
