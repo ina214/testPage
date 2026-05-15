@@ -175,22 +175,23 @@ main section.work dd .list li::before {
 main section.project {
   background-color: #f4f4f4;
 }
-/* 
-
 main section.project .moveTop {
   position: fixed;
-  bottom: calc(60 / 1280 * 100vw);
-  right: calc(30 / 1280 * 100vw);
-  width: calc(40 / 1280 * 100vw);
-  height: calc(30 / 1280 * 100vw);
-  line-height: calc(28 / 1280 * 100vw);
+  bottom: clamp(1.75rem, 2.75vw, 3.75rem);
+  right: clamp(1.25rem, 1.75vw, 2rem);
+  width: 2.5rem;
+  height: 2rem;
+  line-height: 2rem;
   text-align: center;
-  border: calc(1 / 1280 * 100vw) solid #000;
-  background-color: #333;
+  border: 1px solid #000;
+  background-color: #333333;
   color: #fff;
-  z-index: 1;
+  z-index: 10;
   cursor: pointer;
 }
+/* 
+
+
 main section.project .list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
