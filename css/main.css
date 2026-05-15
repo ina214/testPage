@@ -12,6 +12,7 @@ html,body {
   position: relative;
   margin: 0 auto;
   width: 100%;
+  max-width: clamp(50rem, 70vw, 75rem);
 }
 
 /* 단위
@@ -178,7 +179,7 @@ main section.project {
 }
 main section.project .moveTop {
   position: fixed;
-  bottom: clamp(1.75rem, 2.75vw, 3.75rem);
+  bottom: clamp(1.75rem, 3vw, 3.75rem);
   right: clamp(1.25rem, 1.75vw, 2rem);
   width: 2.5rem;
   height: 2rem;
@@ -190,44 +191,55 @@ main section.project .moveTop {
   z-index: 10;
   cursor: pointer;
 }
-/* 
-
-
 main section.project .list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: calc(20 / 1280 * 100vw);
-  display: none;
+  display: block;
+  grid-template-columns: none;
+  gap: none;
+}
+@media (min-width: 1024px) {
+  main section.project .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.25rem, 1.5vw, 1.5rem);
+  }
 }
 main section.project .list li {
-  padding: calc(20 / 1280 * 100vw);
+  padding: clamp(1.25rem, 1.5vw, 1.5rem);
   background-color: #fff;
-  border: calc(1 / 1280 * 100vw) solid #aeaeae;
+  border: 1px solid #aeaeae;
   border-radius: 12px;
 }
+main section.project .list li + li {
+  margin-top: clamp(1.25rem, 1.5vw, 1.5rem);
+}
+@media (min-width: 1024px) {
+  main section.project .list li + li {
+  margin-top: 0;
+}
+}
 main section.project .list .info {
-  padding-bottom: calc(10 / 1280 * 100vw);
-  border-bottom: calc(1 / 1280 * 100vw) solid #d3d3d3;
+  padding-bottom: clamp(0.25rem, 0.5vw, 0.75rem);
+  border-bottom: 1px solid #d3d3d3;
 }
 main section.project .list .info .tit {
-  font-size: calc(16 / 1280 * 100vw);
+  font-size: clamp(0.75rem, 1vw, 1.25rem);
   font-weight: 600;
-  line-height: calc(22 / 1280 * 100vw);
-  width: calc(344 / 1280 * 100vw);
+  line-height: clamp(1rem, 1.25vw,1.5rem);
+  width: clamp(13rem, 17vw, 21rem);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 main section.project .list .info .date {
-  padding: calc(10 / 1280 * 100vw) 0;
-  font-size: calc(12 / 1280 * 100vw);
+  padding: clamp(0.25rem, 0.5vw, 0.75rem) 0;
+  font-size: clamp(0.5rem, 0.75vw, 1rem);
   color: #737272;
   display: block;
 }
 main section.project .list .thumb {
   position: relative;
-  margin-top: calc(8 / 1280 * 100vw);
-  height: calc(240 / 1280 * 100vw);
+  margin-top: 0.5rem;
+  height: clamp(5, 10vw, 15rem);
   background-color: #f9f9f9;
   display: block;
   overflow: hidden;
@@ -253,24 +265,25 @@ main section.project .list .thumb.mo::before {
   background-size: auto 100%;
 }
 main section.project .list .thumb.pc > img {
-  margin: calc(41 / 1280 * 100vw) auto 0;
-  width: calc(265 / 1280 * 100vw);
+  margin: clamp(0.25rem, 3.2vw, 0.5rem) auto 0;
+  width: clamp(16.5625rem, 20.7vw, 16.5625rem);
 }
 main section.project .list .thumb.mo > img {
-  margin: calc(20 / 1280 * 100vw) auto 0;
-  width: calc(100 / 1280 * 100vw);
+  margin: clamp(0.25rem, 1.56vw, 0.5rem) auto 0;
+  width: clamp(6.25rem, 7.8125vw, 6.25rem);
 }
+
 main section.project .list .tech {
-  margin-top: calc(10 / 1280 * 100vw);
+  margin-top: clamp(0.25rem, 0.5vw, 0.75rem);
 }
 main section.project .list .tech span {
-  padding: 0 calc(5 / 1280 * 100vw);
-  height: calc(24 / 1280 * 100vw);
-  border-radius: calc(4 / 1280 * 100vw);
+  padding: 0 clamp(0.3125rem, 0.625vw, 0.625rem);
+  height: clamp(1.5rem, 1.875vw, 1.875rem);
+  border-radius: clamp(0.25rem, 0.3125vw, 0.3125rem);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(12 / 1280 * 100vw);
+  font-size: 0.75rem;
   color: #fff;
   background: #555;
 }
@@ -337,5 +350,3 @@ main section.project .list .tech span.illustrator {
   background-color: #330000;
   color: #ff9a00;
 }
-*/
-
