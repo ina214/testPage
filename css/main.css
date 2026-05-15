@@ -4,13 +4,13 @@
 @import url(common.css);
 
 html,body {
-  min-width: calc(1280 / 1280 * 100vw);
+  min-width: 100vw;
   width: 100vw;
 }
 .wrap {
   position: relative;
   margin: 0 auto;
-  width: calc(1200 / 1280 * 100vw);
+  width: clamp(100vw, 100vw, 1200px);
 }
 
 /* 단위
