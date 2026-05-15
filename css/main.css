@@ -141,14 +141,9 @@ main section.work dd .list {
 main section.work dd .list li {
   position: relative;
   padding-left: 0.75rem;
-  font-size: 1rem;
+  font-size: clamp(0.75rem, 1vw, 1rem);
   color: #706f6f;
   line-height: 1.75rem;
-}
-@media (min-width: 768px) {
-  main section.work dd .list li {
-    padding-left: 0;
-  }
 }
 main section.work dd .list li::before {
   content: "";
