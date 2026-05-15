@@ -113,7 +113,7 @@ main section.top .techList ul li {
   width: auto !important;
 }
 main section.top .techList ul li img {
-  height: clamp(2rem, 4vw, 6rem);
+  height: clamp(1.5rem, 3.75vw, 6rem);
 }
 main section.top .techList ul li img.ico_jquery,
 main section.top .techList ul li img.ico_slack {
