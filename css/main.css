@@ -149,6 +149,11 @@ main section.work dd .list li {
   color: #706f6f;
   line-height: 1.75rem;
 }
+@media (min-width: 768px) {
+  main section.work dd .list li {
+    padding-left: 0;
+  }
+}
 main section.work dd .list li::before {
   content: "";
   position: absolute;
