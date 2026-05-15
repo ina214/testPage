@@ -11,7 +11,7 @@ html,body {
 .wrap {
   position: relative;
   margin: 0 auto;
-  width: clamp(100vw, 100vw, 1200px);
+  width: 100%;
 }
 
 /* 단위
@@ -76,7 +76,7 @@ main section:not(.top) {
 }
 main section h3.title {
   margin-bottom: clamp(2rem, 3vw, 4rem);
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(1.25rem, 1.75vw, 2rem);
   font-weight: 900;
 }
 main section.top .textBox {
@@ -121,9 +121,15 @@ main section.top .techList ul li img.ico_slack {
 }
 
 main section.work dl {
-  margin-left: clamp(0rem, 3vw, 6rem);
+  margin-left: clamp(0rem, 0vw, 6rem);
   display: flex;
-  gap: clamp(1rem, 1.5vw, 2rem)
+  flex-direction: column;
+  gap: clamp(0rem, 1.5vw, 2rem)
+}
+@media (min-width: 1024px) {
+  main section.work dl {
+    flex-direction: row;
+  }
 }
 main section.work dl + dl {
   margin-top: clamp(1.5rem, 2.25vw, 3rem);
