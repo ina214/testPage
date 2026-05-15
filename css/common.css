@@ -26,12 +26,52 @@ body {
 0.5rem = 8px
 0.75rem = 12px
 1rem = 16px
+1.25rem = 20px
 1.5rem = 24px
+1.75rem = 28px
 2rem = 32px
+2.25rem = 36px
+2.5rem = 40px
+2.75rem = 44px
+3rem = 48px
+3.25rem = 52px
+3.5rem = 56px
+3.75rem = 60px
+4rem = 64px
+4.25rem = 68px
+4.5rem = 72px
+4.75rem = 76px
+5rem = 80px
+5.25rem = 84px
+5.5rem = 88px
+5.75rem = 92px
+6rem = 96px
+6.25rem = 100px
+6.5rem = 104px
+6.75rem = 108px
+7rem = 112px
+7.25rem = 116px
+7.5rem = 120px
+*/
+/* VM 
+0.5vm = 0.375rem
+1vm = 0.75rem
+1.5vm = 1.125rem
+2vm = 1.5rem
+2.5vm = 1.875rem
+3vm = 2.25rem
+3.5vm = 2.625rem
+4vm = 3rem
+4.5vm = 3.375rem
+5vm = 3.75rem
+5.5vm = 4.125rem
+6vm = 4.5rem
+6.5vm = 4.875rem
+7vm = 5.25rem
 */
 
 header {
-  height: clamp(1.5rem, 2vw, 3rem);
+  height: clamp(1.5rem, 4vw, 3rem);
   background-color: #282828;
   display: flex;
   align-items: center;
@@ -39,7 +79,7 @@ header {
 }
 header span.update {
   padding: 0.5rem;
-  font-size: clamp(0.75rem, 1vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.5vw, 1.25rem);
   color: #93a9fc;
 }
 
@@ -47,9 +87,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: clamp(1.5rem, 2vw, 3rem);
+  height: clamp(1.5rem, 3vw, 3rem);
   border-top: 1px solid #e0e0e0;
-  font-size: clamp(0.75rem, 1vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 @media (min-width: 768px) {

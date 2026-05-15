@@ -22,18 +22,9 @@ html,body {
 2rem = 32px
 */
 
-main section:not(.top) {
-  padding: clamp(3rem, 2vw, 6rem);
-  min-height: clamp(25rem, 2vw, 75rem);
-}
-main section h3.title {
-  margin-bottom: clamp(2rem, 4vw, 4rem);
-  font-size: clamp(1rem, 2vw, 2rem);
-  font-weight: 900;
-}
-
+/* top */
 main section.top {
-  height: clamp(25rem, 100vw, 75rem);
+  height: clamp(25rem, 50vw, 75rem);
   background: url(../images/introBg.png) bottom center no-repeat;
   background-size: cover;
   display: flex;
@@ -47,8 +38,9 @@ main section.top .wrap {
   justify-content: center;
   height: 100%;
 }
+/* 
 main section.top .logo {
-  margin: clamp(0.75rem, 2vw, 1.5rem);
+  margin: clamp(0.75rem, 1.5vw, 1.5rem);
   width: clamp(1rem, 2vw, 2rem);
   height: clamp(1rem, 2vw, 2rem);
   display: flex;
@@ -59,6 +51,7 @@ main section.top .logo {
   border-radius: 50%;
   font-size: 0;
   z-index: 1;
+  
 }
 main section.top .logo::before {
   position: absolute;
@@ -66,32 +59,50 @@ main section.top .logo::before {
   left: -1px;
   right: -1px;
   bottom: -1px;
+  width: clamp(1rem, 2vw, 2rem);
+  height: clamp(1rem, 2vw, 2rem);
   background: url(../images/logo.png) center center no-repeat;
   background-size: cover;
   border-radius: 50%;
   content: "";
   z-index: -1;
 }
+*/
+
+main section:not(.top) {
+  padding: clamp(3rem, 4.5vw, 6rem);
+  min-height: clamp(25rem, 50vw, 75rem);
+}
+main section h3.title {
+  margin-bottom: clamp(2rem, 3vw, 4rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-weight: 900;
+}
 main section.top .textBox {
-  padding-bottom: clamp(0rem, 2vw, 6rem);
-  padding-left: clamp(1.5rem, 2vw, 0rem);
+  padding-bottom: clamp(0rem, 3vw, 6rem);
+  padding-left: 1.5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  main section.top .textBox {
+    padding-left: 0;
+  }
+}
 main section.top .textBox h2 {
-  margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
-  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: clamp(1.25rem, 1.875vw, 2.5rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   font-weight: 700;
 }
 main section.top .textBox p {
-  margin-top: clamp(0.75rem, 2vw, 1.5rem);
-  font-size: clamp(0.75rem, 2vw, 1.5rem);
+  margin-top: clamp(0.75rem, 1.125vw, 1.5rem);
+  font-size: clamp(0.75rem, 1.125vw, 1.5rem);
 }
 main section.top .techList {
-  padding: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 2vw, 3rem);
+  padding: clamp(1.5rem, 2.25vw, 3rem);
   width: 100%;
 }
 main section.top .techList ul {
@@ -99,58 +110,59 @@ main section.top .techList ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  gap: clamp(1.5rem, 2vw, 3rem) clamp(1.5rem, 2vw, 3rem);
+  gap: clamp(1.5rem, 2.25vw, 3rem) clamp(1.5rem, 2.25vw, 3rem);
   height: 100%;
 }
 main section.top .techList ul li {
   width: auto !important;
 }
 main section.top .techList ul li img {
-  height: clamp(2rem, 3vw, 6rem);
+  height: clamp(2rem, 4vw, 6rem);
 }
 main section.top .techList ul li img.ico_jquery,
 main section.top .techList ul li img.ico_slack {
-  height: clamp(1.5rem, 3vw, 3rem);
+  height: clamp(1.5rem, 2.25vw, 3rem);
 }
 
 main section.work dl {
-  margin-left: clamp(3rem, 2vw, 6rem);
+  margin-left: clamp(3rem, 3.5vw, 6rem);
   display: flex;
-  gap: clamp(1rem, 2vw, 2rem)
+  gap: clamp(1rem, 1.5vw, 2rem)
 }
 main section.work dl + dl {
-  margin-top: clamp(1.5rem, 3vw, 3rem);
+  margin-top: clamp(1.5rem, 2.25vw, 3rem);
 }
-/* 
-
-main section.work {}
-
 main section.work dt {
-  font-size: calc(18 / 1280 * 100vw);
+  font-size: clamp(0.75rem, 1vw, 1.5rem);
 }
 main section.work dd .company {
-  font-size: calc(20 / 1280 * 100vw);
+  font-size: clamp(0.75rem, 1vw, 1.5rem);
   font-weight: 600;
 }
 main section.work dd .list {
-  margin-top: calc(20 / 1280 * 100vw);
+  margin-top: clamp(0.75rem, 1vw, 1.25rem);
 }
 main section.work dd .list li {
   position: relative;
-  padding-left: calc(10 / 1280 * 100vw);
-  font-size: calc(16 / 1280 * 100vw);
+  padding-left: 0.75rem;
+  font-size: 1rem;
   color: #706f6f;
-  line-height: calc(30 / 1280 * 100vw);
+  line-height: 1.75rem;
 }
 main section.work dd .list li::before {
   content: "";
   position: absolute;
-  top: calc(15 / 1280 * 100vw);
+  top: 1rem;
   left: 0;
-  width: calc(5 / 1280 * 100vw);
-  height: calc(1 / 1280 * 100vw);
+  width: 4px;
+  height: 1px;
   background-color: #706f6f;
 }
+/* 
+
+
+
+
 main section.project {
   background-color: #f4f4f4;
 }
