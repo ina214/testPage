@@ -117,7 +117,11 @@ main section.top .techList ul li img {
 }
 main section.top .techList ul li img.ico_jquery,
 main section.top .techList ul li img.ico_slack {
-  height: clamp(1.5rem, 2.25vw, 3rem);
+  height: clamp(1rem, 2vw, 3rem);
+}
+main section.top .techList ul li img.ico_html5,
+main section.top .techList ul li img.ico_css3 {
+  height: clamp(2rem, 4vw, 6rem);
 }
 
 main section.work dl {
