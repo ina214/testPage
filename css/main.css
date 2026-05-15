@@ -128,7 +128,7 @@ main section.work dl {
   gap: clamp(0rem, 1.5vw, 2rem)
 }
 main section.work dl + dl {
-  margin-top: clamp(1.5rem, 2.25vw, 3rem);
+  margin-top: 3rem;
 }
 main section.work dt {
   font-size: clamp(0.75rem, 1vw, 1.5rem);
