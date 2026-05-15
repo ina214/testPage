@@ -75,7 +75,7 @@ main section:not(.top) {
   min-height: clamp(25rem, 50vw, 75rem);
 }
 main section h3.title {
-  margin-bottom: clamp(2rem, 3vw, 4rem);
+  margin-bottom: clamp(3rem, 3.5vw, 4rem);
   font-size: clamp(1.25rem, 1.75vw, 2rem);
   font-weight: 900;
 }
@@ -139,6 +139,7 @@ main section.work dt {
   position: absolute;
   top: 0.20rem;
   right: 0;
+  background-color: #ddd;
 }
 @media (min-width: 1024px) {
   main section.work dt {
