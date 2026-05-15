@@ -6,6 +6,7 @@
 html,body {
   min-width: 100vw;
   width: 100vw;
+  overflow-x: hidden;
 }
 .wrap {
   position: relative;
